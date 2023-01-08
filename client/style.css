@@ -52,7 +52,7 @@ body {
 .poll__option {
   margin-block-start: 1rem;
   cursor: pointer;
-  padding: 0.35rem 0.9rem;
+  padding: 0.4rem 0.9rem;
 }
 
 .poll__option-info.selected .poll__option-fill {
