@@ -7,6 +7,13 @@ const dataFile = path.join(__dirname, 'data.json');
 
 app.use(express.urlencoded({ extended: true }));
 
+//Enables Cors
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+
+  next();
+});
+
 //req, res
 app.get('/poll', async (req, res) => {
   let data = JSON.parse(await fs.readFile(dataFile, 'utf-8'));

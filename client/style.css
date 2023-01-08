@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  list-style: none;
+}
+
+:root {
+  --headingFont: 'Roboto Slab', serif;
+  --bodyFont: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--headingFont);
+}
+
+.poll__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.poll__wrapper {
+  margin: auto;
+  width: 600px;
+  height: 400px;
+  padding: 3rem;
+  margin: 50px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.poll__subtitle {
+  background-color: rgb(243, 243, 243);
+  border-radius: 20px;
+  padding: 0.4rem 1rem;
+  width: fit-content;
+}
+
+.poll__title {
+  padding: 0 0.4rem;
+  margin-top: 0.8rem;
+  margin-bottom: 1.7rem;
+  font-size: 2rem;
+}
+
+.poll__option {
+  margin-block-start: 1rem;
+  cursor: pointer;
+  padding: 0.35rem 0.9rem;
+}
+
+.poll__option-info.selected .poll__option-fill {
+  background-color: rgb(33, 114, 255);
+}
+
+.poll__option-info.selected .poll__label {
+  font-weight: bold;
+}
+
+.poll__option-fill {
+  width: 50%;
+  height: 10px;
+  background-color: rgb(243, 243, 243);
+}
+
+.poll__option-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

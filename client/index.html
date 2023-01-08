@@ -11,12 +11,36 @@
     <title>Voting System - Plain JS</title>
   </head>
   <body>
-    <div class="container">
-      <div class="poll__option">
-        <div class="poll__option-fill"></div>
-        <div class="poll__option-info">
+    <div class="poll__container">
+      <div class="poll__wrapper">
+        <small class="poll__subtitle">Programming</small>
+        <div class="poll__titles"></div>
+        <!-- <div class="poll__title">Which position do you prefer?</div> -->
+        <div class="poll__option">
           <span class="poll__label">Frontend</span>
-          <span class="poll__label">24%</span>
+
+          <div class="poll__option-info">
+            <div class="poll__option-fill"></div>
+            <span class="poll__label">24%</span>
+          </div>
+        </div>
+        <div class="poll__option">
+          <span class="poll__label">Backend</span>
+
+          <div class="poll__option-info selected">
+            <div class="poll__option-fill"></div>
+
+            <span class="poll__label">25%</span>
+          </div>
+        </div>
+        <div class="poll__option">
+          <span class="poll__label">FullStack</span>
+
+          <div class="poll__option-info">
+            <div class="poll__option-fill"></div>
+
+            <span class="poll__label">51%</span>
+          </div>
         </div>
       </div>
     </div>
